@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { StyleProp, ViewStyle } from "react-native";
+import { StyleProp, ViewStyle, ModalProps } from "react-native";
 
 declare module "react-native-raw-bottom-sheet" {
   export type RBSheetProps = {
@@ -12,6 +12,7 @@ declare module "react-native-raw-bottom-sheet" {
     dragFromTopOnly?: boolean;
     closeOnPressMask?: boolean;
     closeOnPressBack?: boolean;
+    customModalProps?: ModalProps;
     onClose?: () => void;
     onOpen?: () => void;
     customStyles?: {
